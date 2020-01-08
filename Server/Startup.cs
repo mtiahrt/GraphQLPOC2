@@ -35,6 +35,7 @@ namespace Server
             }
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            //Here where you add Subscriptions
             //app.UseWebSockets();
             //app.UseGraphQLWebSocket<OrdersSchema>(new GraphQLWebSocketsOptions());
             app.UseGraphQLHttp<GroupsSchema>(new GraphQLHttpOptions());
